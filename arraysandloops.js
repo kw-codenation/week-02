@@ -1,4 +1,4 @@
-console.log("Week 2 Day 3 (Arrays & Loops)")
+console.log("Week 2 Day 3 (Arrays)")
 console.log("===================")
 
 console.log("\nActivity 1")
@@ -16,14 +16,39 @@ console.log(songs)
 
 console.log("\nActivity 2")
 console.log("----------")
-console.log("Demonstrate the method shift() which removes the first item from the array")
+
+console.log('\n===shift()')
+console.log("\nshift() removes the first item from the array")
 console.log("\nDisplay the array 'songs'")
 console.log(songs)
 console.log("\nRemove the first entry using shift() and re-display the array 'songs'")
 songs.shift()
 console.log(songs)
 
-console.log("\n\nWeek 2 Day 3 Loops")
+console.log('\n===map()')
+
+let numbers = [1, 4, 9, 16];
+
+console.log("\nmap() allows for a function to be performed on every item in an array putting the result in a new array")
+console.log('numbers: ' + numbers)
+console.log("\nperform numbers.map( i = i + 7) and display the new array 'newNumbers'")
+let newNumbers = numbers.map(i=>i+7)
+console.log('newNumbers: ' + newNumbers)
+
+console.log('\n===splice()')
+console.log('\nsplice can add or remove  items from an array')
+let century21 = ['Space Car', 'Thunderbirds', 'Captain Scarlet', 'Joe 90', 'Space 1999']
+console.log('Display array century21')
+console.log('Century21: ' + century21)
+console.log('add 2 elements at position 1')
+century21.splice(1, 0, 'Fireball XL5', 'Stingray');
+console.log('Century21: ' + century21)
+console.log('remove 2 elements at position 5')
+century21.splice(5, 2);
+console.log('Century21: ' + century21)
+
+
+console.log("\n\nWeek 2 Day 3 (Loops)")
 console.log("===================")
 console.log("\nActivity 1")
 console.log("----------")

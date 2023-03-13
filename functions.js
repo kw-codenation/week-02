@@ -48,39 +48,6 @@ console.log("All this for one person? I'll give you the number for the local amb
 console.log("\nActivity 3")
 console.log("----------")
 
-/*
-let balance = 1000
-
-const withdrawal = (amount) =>
-{
-    if (amount > balance)
-    {
-        console.log("You do not have enough money to withdraw $" + amount)
-    }
-    else if (amount == balance)
-    {
-        console.log("You have withdrawn all you money from your account, are you being chased by the police?")
-
-    } else
-    {
-        console.log(`You have withdrawn $${amount} from your account, your balance is now $` + (balance - amount))
-    }
-}
-
-let amount = 1510
-console.log(`Withdraw $${amount} from my account`)
-withdrawal(amount)
-
-amount = 1000
-console.log(`Withdraw $${amount} from my account`)
-withdrawal(amount)
-
-amount = 430
-console.log(`Withdraw $${amount} from my account`)
-withdrawal(amount)
-
-*/
-
 var balance = 1000
 
 const cashMachine = (pin, operation, amount=0) =>

@@ -38,10 +38,26 @@ switch (topping)
 console.log("\nAcivity 3")
 console.log("=========")
 
+// correctly formatted password
+console.log('\ncorrectly formatted password')
+console.log('---------------------------')
 let password = 'wofflesss'
 if (password.length < 8)
 {
-    console.log('password is too short')
+    console.log(`password '${password}' is too short`)
+}
+else
+{
+    console.log(`your password is: ${password}`)
+}
+
+// password too small
+console.log('\nincorrectly formatted password')
+console.log('---------------------------')
+password = 'woffle'
+if (password.length < 8)
+{
+    console.log(`password '${password}' is too short`)
 }
 else
 {
@@ -51,21 +67,48 @@ else
 console.log("\nAcivity 4")
 console.log("=========")
 
-let num = 22
+
+// enter a number divisable by 3 or 5
+console.log('\nThe value of the variable num is 35')
+let num = 35
+let message = ['   the number ', num, ' is divisable by 3 or 5']
+let message1 = message.join('')
+let message2 = '   something else'
 if (num % 3 == 0 || num % 5 == 0)
 {
-    console.log('This number is devisable by 3 or 5')
+    console.log(message1)
 }
 else
 {
-    console.log("something else")
+    console.log(message2)
+}
+
+
+// enter a number not divisable by 3 or 5
+console.log('\nThe value of the variable num is 22')
+num = 22
+message1 = message.join('')
+if (num % 3 == 0 || num % 5 == 0)
+{
+    console.log(message1)
+}
+else
+{
+    console.log(message2)
 }
 
 console.log("\nAcivity 5")
 console.log("=========")
 
-num = 42
 
+fizzBuzz(42)
+fizzBuzz(95)
+fizzBuzz(15)
+fizzBuzz(4013)
+
+function fizzBuzz(num)
+{
+    console.log('\nThe value of the variable num is ' + num)
 if (num % 3 == 0 && num % 5 == 0)
 {
     console.log("FizzBuzz")
@@ -80,7 +123,8 @@ else if (num % 5 == 0)
 }
 else
 {
-    console.log(`The number is ${num}`)
+    console.log(`The number ${num} is not divisable by 3 or 5`)
+}
 }
 
 
