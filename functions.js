@@ -1,5 +1,5 @@
-console.log("Week 2 Day 4 Functions")
-console.log("=================================")
+console.log("Week 2 Day 4 (Functions)")
+console.log("========================")
 
 // Activity 1
 console.log("\nActivity 1")
@@ -17,11 +17,13 @@ const factorial = (n) =>
     }
 }
 
-// As I don't know what the factorial of 33 is, I've used 4 & 5 instead
+// As I don't know what the factorial of 33 is I cant tell is this is working, 
+// so I've used 0, 1, 4 & 5 instead
 console.log('The factorial of 0 is ' + factorial(0))
 console.log('The factorial of 1 is ' + factorial(1))
 console.log('The factorial of 4 is ' + factorial(4))
 console.log('The factorial of 5 is ' + factorial(5))
+console.log('The factorial of 33 is ' + factorial(33))
 
 // Activity 2
 console.log("\nActivity 2")

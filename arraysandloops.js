@@ -1,5 +1,6 @@
-console.log("Week 2 Day 3 Arrays")
+console.log("Week 2 Day 3 (Arrays & Loops)")
 console.log("===================")
+
 console.log("\nActivity 1")
 console.log("----------")
 console.log("\nDisplay array 'songs'")
